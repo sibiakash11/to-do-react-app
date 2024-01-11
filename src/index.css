@@ -1,13 +1,123 @@
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f3f2ee; /* Adjust as needed */
+}
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #5992ce;
+  color: #f2eef0;
+  padding: 20px;
+  width: 100%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.header h1 {
+  margin: 0;
+}
+
+.container {
+  background-color: #ebe8e8; /* Primary Base Color */
+  border-radius: 30px;
+  box-shadow: 15px 15px 30px rgba(26, 1, 1, 0.1);
+  padding: 80px; /* Adjusted padding for better visual balance */
+  width: 1200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  border-bottom: 1px solid #f7dca5;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.button-delete,
+button {
+  margin-left: 10px;
+  cursor: pointer;
+  background-color: #e74c3c; /* Red color for delete button */
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.button-delete:hover,
+button:hover {
+  background-color: #c0392b; /* Darker red color on hover */
+}
+
+button {
+  background-color: #3498db; /* Blue color for edit button */
+}
+
+button:hover {
+  background-color: #0f3147; /* Darker blue color on hover */
+}
+input[type="text"] {
+  padding: 8px;
+  border: 1px solid #f4b88e;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+.input-container {
+  display: flex;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.main-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #0f0212;
+  font-family: 'Inter'; /* Use the Inter font */
+  font-weight: 500; /* Adjust font weight if needed */
+  font-size: 65px; /* Adjust font size based on design preferences */
+  font-weight: bold;
+}
+
+.list-item-hover-effect:hover {
+  transform: scale(1.05); 
+  boxShadow: 0 0 15px rgba(0, 0, 0, 0.2); 
+}
+
+.logo {
+  width: 150px; /* Adjust width as needed */
+  height: 200px; /* Adjust height as needed */
+}
+
+.header-container {
+  background-color: #f3f2ee; /* Primary Base Color */
+  width: 100%; /* Increase the width as needed */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
